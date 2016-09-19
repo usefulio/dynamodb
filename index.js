@@ -5,5 +5,10 @@ const documentClient = new AWS.DynamoDB.DocumentClient()
 const put = Promise.promisify(documentClient.put, {context: documentClient});
 
 module.exports = {
-  put
+  put: function(TableName, Item){
+    return put({
+      TableName,
+      Itme 
+    });
+  }
 };

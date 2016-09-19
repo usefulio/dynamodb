@@ -1,6 +1,6 @@
 {
   "name": "@useful/dynamodb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Standardized patterns for working with DynamoDB",
   "main": "index.js",
   "scripts": {
