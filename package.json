@@ -1,0 +1,23 @@
+{
+  "name": "@useful/dynamodb",
+  "version": "1.0.0",
+  "description": "Standardized patterns for working with DynamoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usefulio/dynamodb.git"
+  },
+  "author": "Useful IO",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/usefulio/dynamodb/issues"
+  },
+  "homepage": "https://github.com/usefulio/dynamodb#readme",
+  "dependencies": {
+    "aws-sdk": "^2.6.3",
+    "bluebird": "^3.4.6"
+  }
+}
