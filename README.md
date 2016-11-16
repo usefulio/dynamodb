@@ -13,3 +13,11 @@ const get = require('@useful/dynamodb').get;
 
 get('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }); // returns a promise
 ```
+
+# Update an Item in DynamoDB
+
+```js
+const get = require('@useful/dynamodb').get;
+
+get('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }, { /* Your update expression */ }, { /* Your expression attribute values */ } ); // returns a promise
+```
