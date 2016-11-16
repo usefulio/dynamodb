@@ -19,12 +19,13 @@ module.exports = {
       Key
     });
   },
-  update: function(TableName, Key, UpdateExpression, ExpressionAttributeValues) {
+  update: function(TableName, Key, UpdateExpression, ExpressionAttributeValues, ReturnValues) {
     return update({
       TableName,
       Key,
       UpdateExpression,
-      ExpressionAttributeValues
+      ExpressionAttributeValues,
+      ReturnValues
     });
   }
 };
