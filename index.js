@@ -30,7 +30,7 @@ module.exports = {
     });
   },
   query: function(params) {
-    if (typeof params === Object)
+    if (typeof params === 'object')
       return query(params);
   }
 };

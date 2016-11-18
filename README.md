@@ -17,9 +17,9 @@ get('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }); // returns a 
 # Update an Item in DynamoDB
 
 ```js
-const get = require('@useful/dynamodb').get;
+const update = require('@useful/dynamodb').update;
 
-get('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }, { /* Your update expression */ }, { /* Your expression attribute values */ }, /* ReturnValues string */ ); // returns a promise
+update('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }, { /* Your update expression */ }, { /* Your expression attribute values */ }, /* ReturnValues string */ ); // returns a promise
 ```
 
 # Query a DynamoDB
