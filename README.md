@@ -21,3 +21,22 @@ const get = require('@useful/dynamodb').get;
 
 get('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }, { /* Your update expression */ }, { /* Your expression attribute values */ }, /* ReturnValues string */ ); // returns a promise
 ```
+
+# Query a DynamoDB
+
+```js
+const get = require('@useful/dynamodb').get;
+
+var params = {
+    TableName : "Movies",
+    KeyConditionExpression: "#yr = :yyyy",
+    ExpressionAttributeNames:{
+        "#yr": "year"
+    },
+    ExpressionAttributeValues: {
+        ":yyyy":1985
+    }
+};
+
+query(params); // returns a promise
+```
