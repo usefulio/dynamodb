@@ -14,6 +14,14 @@ const get = require('@useful/dynamodb').get;
 get('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }); // returns a promise
 ```
 
+# Delete an Item from DynamoDB
+
+```js
+const remove = require('@useful/dynamodb').remove;
+
+remove('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }); // returns a promise
+```
+
 # Update an Item in DynamoDB
 
 ```js
@@ -25,7 +33,7 @@ update('my-ddb-table', { YourHashKeyName: "YourItemsHashKeyValue" }, { /* Your u
 # Query a DynamoDB
 
 ```js
-const get = require('@useful/dynamodb').get;
+const query = require('@useful/dynamodb').query;
 
 var params = {
     TableName : "Movies",
