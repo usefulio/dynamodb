@@ -35,7 +35,7 @@ module.exports = {
       return query(params);
   },
   remove: function(TableName, Key) {
-    return get({
+    return remove({
       TableName,
       Key
     });
